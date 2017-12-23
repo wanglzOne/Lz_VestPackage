@@ -15,8 +15,8 @@
 #import <UserNotifications/UserNotifications.h>
 #endif
 
-#define kJpushAppKey @"01dd5f4ad813d5a87c43a47f"
-#define APPID @"111111"
+#define kJpushAppKey @"c483d30dbcf1c704efe71798"
+#define APPID @"1329177060"
 
 @interface AppDelegate ()<JPUSHRegisterDelegate>{
     ScottAlertViewController *_alertCon;

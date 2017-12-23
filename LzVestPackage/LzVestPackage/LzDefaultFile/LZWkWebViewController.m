@@ -15,8 +15,8 @@
 #define VHScreen 1
 // 返回YES表示隐藏，返回NO表示显示 状态栏
 #define HiddenStatusBar YES
-#define webUrl @"http://sda.4399.com/4399swf/upload_swf/ftp14/wangc/20141011/2/game.htm"
-#define ADDestimatedProgress  2
+#define webUrl @"http://sda.4399.com/4399swf/upload_swf/ftp19/ssj/20160809/t9/index.html"
+#define ADDestimatedProgress  1 //优化web加载时出现的白屏
 
 @interface LZWkWebViewController ()<WKUIDelegate>
 @property (nonatomic, strong) WKWebView *wkWeb;
@@ -61,7 +61,7 @@
         
         if (self.wkWeb.estimatedProgress == 1) {
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //                [SVProgressHUD dismiss];
                 [self.guide hideGuideView];
                 [self.wkWeb setAlpha:1];
@@ -120,14 +120,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

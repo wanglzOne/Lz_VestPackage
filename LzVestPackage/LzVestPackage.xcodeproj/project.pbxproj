@@ -32,6 +32,7 @@
 		28ED9BB51FEE4643009924AF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ED9BB41FEE4643009924AF /* CoreTelephony.framework */; };
 		28ED9BB71FEE464E009924AF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ED9BB61FEE464E009924AF /* CoreFoundation.framework */; };
 		28ED9BB91FEE4656009924AF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ED9BB81FEE4656009924AF /* CFNetwork.framework */; };
+		28ED9BBE1FEE5315009924AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28ED9BC01FEE5315009924AF /* InfoPlist.strings */; };
 		776253BDF081F34494A18A95 /* libPods-LzVestPackage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73792FC8BF3656B266EBC5C1 /* libPods-LzVestPackage.a */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +64,6 @@
 		28ED9B961FEE44AB009924AF /* webViewTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewTabBarController.h; sourceTree = "<group>"; };
 		28ED9B971FEE44AB009924AF /* RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
 		28ED9B981FEE44AB009924AF /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewController.h; sourceTree = "<group>"; };
-		28ED9BA21FEE44B2009924AF /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		28ED9BA31FEE4541009924AF /* LzVestPackage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LzVestPackage.entitlements; sourceTree = "<group>"; };
 		28ED9BA41FEE458C009924AF /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		28ED9BA61FEE4599009924AF /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
@@ -76,6 +76,10 @@
 		28ED9BB41FEE4643009924AF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		28ED9BB61FEE464E009924AF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		28ED9BB81FEE4656009924AF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		28ED9BBA1FEE52DD009924AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		28ED9BBB1FEE52DD009924AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		28ED9BBF1FEE5315009924AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		28ED9BC11FEE5318009924AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		29B9C8DC1FA29D1A60BC510D /* Pods-LzVestPackage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LzVestPackage.release.xcconfig"; path = "Pods/Target Support Files/Pods-LzVestPackage/Pods-LzVestPackage.release.xcconfig"; sourceTree = "<group>"; };
 		73792FC8BF3656B266EBC5C1 /* libPods-LzVestPackage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LzVestPackage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B108251E2B4BE4B14EC29AA7 /* Pods-LzVestPackage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LzVestPackage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LzVestPackage/Pods-LzVestPackage.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +140,6 @@
 				28ED9B741FEE43EC009924AF /* Assets.xcassets */,
 				28ED9B761FEE43EC009924AF /* LaunchScreen.storyboard */,
 				28ED9B791FEE43EC009924AF /* Info.plist */,
-				28ED9BA21FEE44B2009924AF /* InfoPlist.strings */,
 				28ED9B7A1FEE43EC009924AF /* main.m */,
 			);
 			path = LzVestPackage;
@@ -145,6 +148,7 @@
 		28ED9B811FEE44AB009924AF /* LzDefaultFile */ = {
 			isa = PBXGroup;
 			children = (
+				28ED9BC01FEE5315009924AF /* InfoPlist.strings */,
 				28ED9B851FEE44AB009924AF /* LZWkWebViewController.h */,
 				28ED9B821FEE44AB009924AF /* LZWkWebViewController.m */,
 				28ED9B831FEE44AB009924AF /* GuideView.h */,
@@ -298,6 +302,7 @@
 				28ED9B751FEE43EC009924AF /* Assets.xcassets in Resources */,
 				28ED9B731FEE43EC009924AF /* Main.storyboard in Resources */,
 				28ED9B9A1FEE44AB009924AF /* GuideView.xib in Resources */,
+				28ED9BBE1FEE5315009924AF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +388,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				28ED9B721FEE43EC009924AF /* Base */,
+				28ED9BBA1FEE52DD009924AF /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -391,8 +397,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				28ED9B771FEE43EC009924AF /* Base */,
+				28ED9BBB1FEE52DD009924AF /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		28ED9BC01FEE5315009924AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28ED9BBF1FEE5315009924AF /* zh-Hans */,
+				28ED9BC11FEE5318009924AF /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -402,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -457,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -507,16 +525,17 @@
 			baseConfigurationReference = B108251E2B4BE4B14EC29AA7 /* Pods-LzVestPackage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = LzVestPackage/LzVestPackage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 34SEC5MH96;
+				DEVELOPMENT_TEAM = MP7PVGPB52;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LzVestPackage/MacroHeader/LzVestPackage.pch";
 				INFOPLIST_FILE = LzVestPackage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qwert.cn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LzClassiCbaccaratChessBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -527,16 +546,17 @@
 			baseConfigurationReference = 29B9C8DC1FA29D1A60BC510D /* Pods-LzVestPackage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = LzVestPackage/LzVestPackage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 34SEC5MH96;
+				DEVELOPMENT_TEAM = MP7PVGPB52;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LzVestPackage/MacroHeader/LzVestPackage.pch";
 				INFOPLIST_FILE = LzVestPackage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qwert.cn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LzClassiCbaccaratChessBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
